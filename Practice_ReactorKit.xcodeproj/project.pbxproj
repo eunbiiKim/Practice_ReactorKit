@@ -18,6 +18,7 @@
 		C3F3FEA4292DD51800322D25 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C3F3FEA3292DD51800322D25 /* RxCocoa */; };
 		C3F3FEA6292DD51800322D25 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = C3F3FEA5292DD51800322D25 /* RxRelay */; };
 		C3F3FEA8292DD51800322D25 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C3F3FEA7292DD51800322D25 /* RxSwift */; };
+		C3F3FEAA292DD6C500322D25 /* CounterViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F3FEA9292DD6C500322D25 /* CounterViewReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		C3F3FE81292DCE3800322D25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3F3FE84292DCE3800322D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3F3FE86292DCE3800322D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3F3FEA9292DD6C500322D25 /* CounterViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				C3F3FE78292DCE3600322D25 /* AppDelegate.swift */,
 				C3F3FE7A292DCE3600322D25 /* SceneDelegate.swift */,
 				C3F3FE7C292DCE3600322D25 /* ViewController.swift */,
+				C3F3FEA9292DD6C500322D25 /* CounterViewReactor.swift */,
 				C3F3FE7E292DCE3600322D25 /* Main.storyboard */,
 				C3F3FE81292DCE3800322D25 /* Assets.xcassets */,
 				C3F3FE83292DCE3800322D25 /* LaunchScreen.storyboard */,
@@ -161,6 +164,7 @@
 			files = (
 				C3F3FE7D292DCE3600322D25 /* ViewController.swift in Sources */,
 				C3F3FE79292DCE3600322D25 /* AppDelegate.swift in Sources */,
+				C3F3FEAA292DD6C500322D25 /* CounterViewReactor.swift in Sources */,
 				C3F3FE7B292DCE3600322D25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
