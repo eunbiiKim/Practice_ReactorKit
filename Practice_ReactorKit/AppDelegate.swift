@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Practice_ReactorKit
 //
-//  Created by pineone on 2022/11/23.
+//  Created by eunbiiKim on 2022/11/23.
 //
 
 import UIKit
