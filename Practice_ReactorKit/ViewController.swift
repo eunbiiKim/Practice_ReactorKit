@@ -14,7 +14,7 @@ import RxCocoa
 class ViewController: UIViewController, StoryboardView {
     
     var disposeBag = DisposeBag()
-
+    
     @IBOutlet weak var valueLabel: UILabel!
     @IBOutlet weak var increaseButton: UIButton!
     @IBOutlet weak var decreaseButton: UIButton!
@@ -25,29 +25,32 @@ class ViewController: UIViewController, StoryboardView {
     }
     
     func bind(reactor: CounterViewReactor) {
-        // Action binding
+        actionBind()
+        stateBind()
+    }
+    
+    private func actionBind() {
         increaseButton.rx.tap
             .map { Reactor.Action.increase }
-            .bind(to: reactor.action)
+            .bind(to: reactor!.action)
             .disposed(by: disposeBag)
         
         decreaseButton.rx.tap
             .map { Reactor.Action.decrease }
-            .bind(to: reactor.action)
+            .bind(to: reactor!.action)
             .disposed(by: disposeBag)
-        
-        // State binding
-        reactor.state.map { $0.value }
+    }
+    
+    private func stateBind() {
+        reactor?.state.map { $0.value }
             .distinctUntilChanged()
             .map { "\($0)" }
             .bind(to: valueLabel.rx.text)
             .disposed(by: disposeBag)
         
-        reactor.state.map { $0.isLoading }
+        reactor?.state.map { $0.isLoading }
             .distinctUntilChanged()
             .bind(to: activityIndicatorView.rx.isAnimating)
             .disposed(by: disposeBag)
-         
     }
 }
-
